@@ -6152,6 +6152,37 @@
 		},
 		{
 			"categories": [
+				"SCM",
+				"Tools"
+			],
+			"description": "A painless self-hosted Git service with project management.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "USER_UID",
+					"name": "USER_UID"
+				},
+				{
+					"default": "1000",
+					"label": "USER_GID",
+					"name": "USER_GID"
+				}
+			],
+			"image": "1dev/server:latest",
+			"logo": "https://github.com/NutanNiraula/self-setup/blob/master/home-server/pi-hosted/images/one-dev.png?raw=true",
+			"name": "onedev-app",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://onedev.io\" target=\"_blank\">https://onedev.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.onedev.io/installation-guide/run-as-docker-container\" target=\"_blank\">https://docs.onedev.io/installation-guide/run-as-docker-container</a><br>",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "home-server/pi-hosted/stack/one-dev.yml",
+				"url": "https://github.com/NutanNiraula/self-setup"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "OneDev",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Tools"
 			],
 			"description": "Free & Open-Source HTML5 Network Performance Estimation Tool",
